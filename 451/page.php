@@ -25,7 +25,7 @@ Unavailable For Legal Reasons
 	</div>
  
   <div id="bottom">
-Estonian Transparency Report<br />  
+Estonian Transparency Report<br /><br />
   	Will be opened<br />
 		12th of june 2013<br /><br />
   	<img id="logo" src="<?php print get_bloginfo('stylesheet_directory'); ?>/img/censored.png" /><br /><br />
