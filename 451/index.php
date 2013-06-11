@@ -1,6 +1,6 @@
-<?php
-/**
- * The template for displaying POST LISTING.
+tttt<?php
+t/**
+/bin/bash: :quit: command not found
  */
 
 get_header(); ?>
