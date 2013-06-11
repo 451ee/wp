@@ -27,7 +27,7 @@ Unavailable For Legal Reasons
   <div id="bottom">
     Estonian Transparency Report<br />
   	Will be opened<br />
-		4:51 PM on 15th of June 2013<br /><br />
+		4:51 PM on 16th of June 2013<br /><br />
   	<img id="logo" src="<?php print get_bloginfo('stylesheet_directory'); ?>/img/censored.png" /><br /><br />
 
 
