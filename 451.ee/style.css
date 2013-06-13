@@ -1,0 +1,158 @@
+/*
+Theme Name: 451.ee
+
+Author: 451 team
+
+*/
+
+/* micro clearfix: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+/* wp-specific classes */
+.wp-caption{
+	
+}
+
+.wp-caption-text{
+	
+}
+
+.sticky{
+	
+}
+
+.gallery-caption{
+	
+}
+
+/* layout */
+
+body{
+	padding-top: 0;
+	font-family: BandaRegular !important;
+	-webkit-font-smoothing: antialiased;
+}
+
+}
+input[type="text"], 
+input[type="password"], 
+input[type="submit"],
+textarea {
+	font-family: BandaRegular; 
+	font-weight: normal; 
+	font-style: normal;
+}
+
+a {color: #333;}
+
+h4 {padding: 0; margin: 0 0 10px 0;}
+.page h5 {font-weight: bold; padding: 0; margin: 0 0 6px 0;}
+
+.span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9 {border: 0px solid #000;}
+
+/* Admin Top Navigation fixes */
+
+body.admin-bar .navbar-fixed-top{ 
+	top: 28px; 
+}
+
+input, textarea, select, .uneditable-input {
+	margin-bottom: 0;
+}
+
+.cf_hidden {display: none;}
+.linklove {display: none;} 
+.cf-ol {list-style: none;}
+.failure {border: 1px solid #cc0033; border-radius: 5px; padding: 10px;} 
+
+.cf_info {font-size: 20px; padding: 5px;}
+
+img.alignnone {margin: 0 0 10px 0;}
+
+.logo {margin: 0 0 10px 0;}
+
+.form-search {float: right;}
+
+
+#content{
+margin: 0px 0 0 0;
+padding: 10px 0 0;
+}
+
+#header {border-bottom: 5px solid #F15A24;}
+
+ul#menu-header {list-style: none outside; margin: 3px 0; height: 32px;}
+
+ul#menu-header > li {
+    float: left;
+}
+
+ul#menu-header li {margin: 0 0 0 10px;}
+
+ul#menu-header > li > a {
+    display: block;
+	padding: 6px;
+	font-size: 20px;
+	color: #333;
+}
+
+li.current-menu-item, li.current-page-ancestor {text-decoration: underline;}
+
+.container-fluid{
+	
+padding: 0 0 0 0;
+
+	}
+
+	article.post {text-align: justify;}
+
+	.datebox {width: 50px; background-color: #DFDFDF; font-size: 24px; text-align: center; padding: 5px; color: #868686;} 
+	.datebox hr {border-color: #868686; margin: 5px 0;}
+	.author {color: #868686; font-weight: bold;}
+	.widget {margin: 20px 0 0 0;}
+	.widget h3 {background-color: #DFDFDF; padding: 10px 10px; margin: 1px 0; font-size: 20px; font-weight: normal; color: #666; line-height: 1;}
+	.archives {background-color: #DFDFDF; padding: 15px; margin: 0px 0 0 0; list-style: none outside;}
+
+
+ul.subpages {list-style: none outside; margin-top: 20px; }
+
+ul.subpages a {color: #333; font-size: 16px;}
+ul.subpages a i {text-decoration: none;}
+
+
+@media only screen and (min-width: 768px) {
+	.carousel-caption p{
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 990px) {
+	body{
+
+	}
+	
+	.container-fluid{
+	
+		margin: 0 auto;
+
+	}
+
+	article.post h1 {font-size: 30px; }
+
+
+
+}
