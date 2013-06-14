@@ -8,6 +8,20 @@ add_image_size( 'small-thumb', 100, 100, true );
 register_nav_menu( 'primary', 'Primary Menu' );
 add_theme_support( 'post-thumbnails' );
 
+function widgets_init() {
+	register_sidebar(array(
+		'name' => __( 'Footer' ),
+		'id' => 'footer',
+		'before_widget' => '<li id="%1$s" class="box %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+	));
+	}
+add_action( 'widgets_init', 'widgets_init' );
+
+
+
 // enqueue styles
 
 function theme_styles()  
@@ -42,5 +56,11 @@ function theme_js(){
 }
 add_action('wp_enqueue_scripts', 'theme_js');
 
+function feat_init() {
+    $args = array( 'public' => true, 'label' => 'Featured',  'query_var' => true, 'capability_type' => 'post', 'supports' => array( 'title', 'editor', 'thumbnail' ) );
+    register_post_type( 'feat', $args );
+}
+
+add_action( 'init', 'feat_init' ); 
 
 ?>

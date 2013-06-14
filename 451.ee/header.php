@@ -44,6 +44,14 @@
 		</script>
 	</head>
 <body <?php body_class(); ?>>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=487525477986795";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="container">
 		<div id="header">
 		<a href="/"><img src="<? bloginfo('template_url');?>/img/logo.png" class="logo" /></a>
