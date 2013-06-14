@@ -52,8 +52,8 @@
 
 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
   <div class="input-append">
-    <input type="text" class="span2" placeholder="Otsi lehelt" value="" name="s" id="s" />
-	 <button class="btn" onclick="submit();" type="button"><i class="icon-search"></i></button>
+    <input type="text" class="si" placeholder="Otsi lehelt" value="" name="s" id="s" />
+	 <button class="btn" onclick="submit();" type="button"><i class="icon-search icon-large"></i></button>
   </div>
 </form>
 		</div>
