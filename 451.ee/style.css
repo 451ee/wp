@@ -67,10 +67,6 @@ h4 {padding: 0; margin: 0 0 10px 0;}
 
 .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9 {border: 0px solid #000;}
 
-strong {
-	font-family: BandaSemibold-SemiBold !important;
-}
-
 /* Admin Top Navigation fixes */
 
 body.admin-bar .navbar-fixed-top{ 
@@ -102,12 +98,28 @@ padding: 10px 0 0;
 
 .post_content {margin: 0 0 10px 0;}
 
-#header {border-bottom: 5px solid #F15A24; margin: 10px 0 0 0;}
+#header {margin: 10px 0 0 0;}
 
-ul#menu-header {list-style: none outside; margin: 3px 0; height: 32px;}
+hr.red {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #F15A24;
+  background-color: #F15A24;
+  border-image: none;
+  border-style: solid none;
+  border-radius: 3px;
+  height: 5px;
+  margin: 5px 0;
+}
+
+
+
+ul#menu-header {list-style: none outside; margin: 3px 0; height: 32px; text-align: center;}
 
 ul#menu-header > li {
-    float: left;
+    display: inline-block;
 }
 
 ul#menu-header li {margin: 0 0 0 10px;}
@@ -121,40 +133,50 @@ ul#menu-header > li > a {
 
 ul#menu-header li.current-menu-item > a, ul#menu-header li.current-page-ancestor > a {text-decoration: none; color: #333333;}
 
-.container-fluid{
+.container-fluid {
 	
 padding: 0 0 0 0;
 
 	}
 
-#myCarousel {min-height: 230px; }
-
-#myCarousel .item {}
-
-#myCarousel img.wp-post-image {float: left;}
+#myCarousel { }
 
 
 
-#myCarousel .feat_content, #myCarousel h2 {line-height: 1.5; color: #999999;}
+.carousel-inner {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+#myCarousel .item  {min-height: 220px; margin: 0 50px;}
+
+#myCarousel .feat_thumb {float: left; width: 30%; text-align: center;}
+#myCarousel .feat_content {float: left; width: 70%; line-height: 1.5; color: #999999;}
+
+
+#myCarousel h2 {color: #999999; margin: 0;}
 
 a.read_more {text-decoration: none; color: #999;}
 
 a.read_more i {color: #f15a24;}
 
+.indicator-position {  text-align: center;   height: 30px;}
+
 .carousel-indicators {
   list-style: none outside none;
-  margin: 0;
-  position: absolute;
-  right: 5px;
-  top: 5px;
+  position: relative;
+  right: 0px; 
+  top: 0px;
+  margin: 0 0 0 50%;
   z-index: 5;
 }
 
 .carousel-indicators li {
   background-color: #ccc;
   border-radius: 8px 8px 8px 8px;
-  display: block;
-  float: left;
+  display: inline;
+
   height: 16px;
   margin-left: 5px;
   text-indent: -999px;
@@ -164,8 +186,6 @@ a.read_more i {color: #f15a24;}
 .carousel-indicators .active {
   background-color: #666;
 }
-
-
 	article.post {text-align: justify;}
 
 	.datebox {width: 50px; margin: 20px 0 0 0; background-color: #DFDFDF; font-size: 24px; text-align: center; padding: 5px; color: #868686;} 
@@ -195,9 +215,11 @@ ul.subpages a i {text-decoration: none;}
 
 
  ul.widgets {list-style: none outside; margin: 0;   }
- ul.widgets li {  display: table-cell; width: 22%; padding: 15px; border-left: 1px solid #fff;}
+ ul.widgets li {  display: table-cell; width: 300px; padding: 15px; border-left: 1px solid #fff;}
 
-#footer ul.widgets > li:first-child {width: 40%; border-left: none;}
+ ul.widgets li h3 {margin: 0;}
+
+#footer ul.widgets > li:first-child {width: ; border-left: none;}
 
 li.widget_nav_menu ul li {display: block; float: none; width: 100%; padding: 0; border: none;}
 
