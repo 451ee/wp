@@ -173,7 +173,7 @@ a.read_more {text-decoration: none; color: #999; display: inline; padding: 5px; 
 
 
 
-a.read_more i {color: #f15a24; }
+a.read_more i {color: #f15a24; line-height: 18px}
 
 .indicator-position {  text-align: center;   height: 30px;}
 

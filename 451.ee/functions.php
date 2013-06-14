@@ -63,4 +63,26 @@ function feat_init() {
 
 add_action( 'init', 'feat_init' ); 
 
+add_action( 'add_meta_boxes', 'link_meta_box_add' );
+
+function link_meta_box_add()
+{
+	add_meta_box( 'my-meta-box-id', 'Link URL', 'link_meta_box_cb', 'feat', 'normal', 'high' );
+}
+
+function link_meta_box_cb()  
+{  
+
+$values = get_post_custom( $post->ID );  
+$text = isset( $values['my_meta_box_text'] ) ? esc_attr( $values['my_meta_box_text'][0] ) : ”;  
+$selected = isset( $values['my_meta_box_select'] ) ? esc_attr( $values['my_meta_box_select'][0] ) : ”;  
+$check = isset( $values['my_meta_box_check'] ) ? esc_attr( $values['my_meta_box_check'][0] ) : ”;  
+    ?>  
+<p>  
+    <label for="my_meta_box_text">Full url (http://...)</label>  
+    <input type="text" name="my_meta_box_text" id="my_meta_box_text" value="<?php echo $text; ?>" />  
+        </p>  
+    <?php 
+} 
+
 ?>
