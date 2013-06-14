@@ -49,7 +49,7 @@
         <a href="https://github.com/451ee/wp"><img style="position: absolute; top: 28px; right: 0; border: 0; width: 120px; height: 120px;" src="<?php echo get_template_directory_uri(); ?>/img/forkMe.png" alt="Fork me on GitHub"></a>		
         <div id="header">
 		<a href="<?php echo home_url( '/' ); ?>"><img src="<? bloginfo('template_url');?>/img/logo.png" class="logo" /></a>
-
+<a href="http://451.ee/en/">eng</a>
 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
   <div class="input-append">
     <input type="text" class="si" placeholder="Otsi lehelt" value="" name="s" id="s" />
