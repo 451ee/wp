@@ -1,4 +1,4 @@
-<!doctype html>  
+<!doctype html>
 
 <!--[if IEMobile 7 ]> <html <?php language_attributes(); ?>class="no-js iem7"> <![endif]-->
 <!--[if lt IE 7 ]> <html <?php language_attributes(); ?> class="no-js ie6"> <![endif]-->
@@ -53,7 +53,8 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 	<div class="container">
-		<div id="header">
+        <a href="https://github.com/451ee/wp"><img style="position: absolute; top: 0; right: 0; border: 0;" src="<?php echo get_template_directory_uri(); ?>/img/forkMe.png" alt="Fork me on GitHub"></a>		
+        <div id="header">
 		<a href="/"><img src="<? bloginfo('template_url');?>/img/logo.png" class="logo" /></a>
 
 	<form class="form-search">
