@@ -19,7 +19,7 @@
 				<div class="feat_content">
 					<h2><?php the_title(); ?></h2>
 					<?php the_excerpt(); ?>				
-					<a href="" class="read_more"> <?php _e("Loe lähemalt", "theme"); ?> <i class="icon-chevron-right icon-2x"></i></a>
+					<a href="<?php echo get_post_meta( $post->ID, 'link_url', true); ?>" class="read_more"> <?php _e("Loe lähemalt", "theme"); ?> <i class="icon-chevron-right icon-2x"></i></a>
 					
 				</div>
 				<div class="clearfix"></div>
@@ -46,12 +46,15 @@
 	</ul>
 </div>
 
+
+
 				
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<article <?php post_class('clearfix'); ?> role="article"><section class="post_content">
+				<div class="text-center"><article <?php post_class('clearfix'); ?> role="article"><section class="post_content">
 						<?php the_content(); ?>
 					</section> 
 				</article>
+				</div>
 			<?php endwhile; ?>	
 					
 					<?php else : ?>
