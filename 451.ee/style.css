@@ -60,7 +60,16 @@ textarea {
 	font-style: normal;
 }
 
-a {color: #333;}
+a {color: #f15a24;}
+a:hover {color: #f15a24; text-decoration: underline;}
+
+::selection {
+	background: #999; /* Safari */
+	}
+::-moz-selection {
+	background: #999; /* Firefox */
+}
+
 
 strong {
 	font-family: BandaSemibold-SemiBold !important;
