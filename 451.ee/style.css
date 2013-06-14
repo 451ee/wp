@@ -112,8 +112,7 @@ hr.red {
   border-radius: 3px;
   height: 5px;
   margin: 5px 0;
-}
-
+}	  
 
 
 ul#menu-header {list-style: none outside; margin: 3px 0; height: 32px; text-align: center;}
@@ -139,7 +138,7 @@ padding: 0 0 0 0;
 
 	}
 
-#myCarousel { }
+#myCarousel {margin: 20px 0 0 0; }
 
 
 
@@ -213,9 +212,11 @@ ul.subpages a i {text-decoration: none;}
 
 #footer {background-color: #f2f2f2; margin: 0 0 15px 0;}
 
+#footer h4 {color: #666;}
+
 
  ul.widgets {list-style: none outside; margin: 0;   }
- ul.widgets li {  display: table-cell; width: 300px; padding: 15px; border-left: 1px solid #fff;}
+ ul.widgets li {  display: table-cell; width: 330px; padding: 15px; border-left: 1px solid #fff;}
 
  ul.widgets li h3 {margin: 0;}
 

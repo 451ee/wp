@@ -1,19 +1,6 @@
 <?php get_header(); ?>
 <div id="content" class="clearfix row-fluid">
-	<div class="span2">
-		<?php
-		if($post->post_parent)
-
-		$children = wp_list_pages("link_before=<i class='icon-li icon-angle-right icon-large'></i>&title_li=&child_of=".$post->post_parent."&echo=0");
-		else
-		$children = wp_list_pages("link_before=<i class='icon-li icon-angle-right icon-large'></i>&title_li=&child_of=".$post->ID."&echo=0");
-		if ($children) { ?>
-		<ul class="subpages icons-ul">
-		<?php echo $children; ?>
-		</ul>
-		<?php } ?>
-	</div>
-	<div class="span10">
+	<div class="span12">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -42,7 +29,5 @@
 		<?php endif; ?>
 
 	</div>
-			
-</div>   
-
+</div>
 <?php get_footer(); ?>
