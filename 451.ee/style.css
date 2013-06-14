@@ -152,7 +152,7 @@ padding: 0 0 0 0;
   width: 100%;
 }
 
-#myCarousel .item  {min-height: 220px; margin: 0 50px;}
+#myCarousel .item  {min-height: 200px; margin: 0 50px;}
 
 #myCarousel .feat_thumb {float: left; width: 30%; text-align: center;}
 #myCarousel .feat_content {float: left; width: 70%; line-height: 1.5; color: #999999;}
@@ -160,9 +160,11 @@ padding: 0 0 0 0;
 
 #myCarousel h2 {color: #999999; margin: 0;}
 
-a.read_more {text-decoration: none; color: #999;}
+a.read_more {text-decoration: none; color: #999; display: inline; padding: 5px; }
 
-a.read_more i {color: #f15a24;}
+
+
+a.read_more i {color: #f15a24; }
 
 .indicator-position {  text-align: center;   height: 30px;}
 
@@ -222,7 +224,7 @@ ul.subpages a i {text-decoration: none;}
  ul.widgets {list-style: none outside; margin: 0;   }
  ul.widgets li {  display: table-cell; width: 330px; padding: 15px; border-left: 1px solid #fff;}
 
- ul.widgets li h3 {margin: 0;}
+ ul.widgets li h3 {margin: 0 0 10px 0;}
 
 #footer ul.widgets > li:first-child {width: ; border-left: none;}
 
@@ -267,6 +269,10 @@ li.widget_nav_menu ul li {display: block; float: none; width: 100%; padding: 0; 
 
 .accordion-heading .accordion-toggle {
     padding: 0;
+}
+
+a [class^="icon-"], a [class*=" icon-"] {
+  display: inherit;
 }
 
 h3 {

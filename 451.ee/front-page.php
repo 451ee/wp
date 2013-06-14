@@ -19,7 +19,7 @@
 				<div class="feat_content">
 					<h2><?php the_title(); ?></h2>
 					<?php the_excerpt(); ?>				
-					<a href="" class="read_more"> <?php _e("Loe lähemalt", "theme"); ?> <i class="icon-chevron-right icon-large"></i></a>
+					<a href="" class="read_more"> <?php _e("Loe lähemalt", "theme"); ?> <i class="icon-chevron-right icon-2x"></i></a>
 					
 				</div>
 				<div class="clearfix"></div>
