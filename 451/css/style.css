@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+p { margin-bottom: 15px; }
+
+@font-face {
+	font-family: Banda;
+	src: url("../font/regular.otf") format("opentype");
+}
+
+body {
+	font-family: Banda, Helvetica, Arial, sans-serif;
+	color: #999;
+	margin: 10px;
+}
+
+#logo {
+	margin-left: auto; margin-right: auto; width: 123px;
+}
+
+#main {
+	margin-left: auto; margin-right: auto;
+	width: 100%;
+	min-width: 300px;
+	max-width: 700px;
+	text-align: center;
+	border-bottom: 4px solid #ee5b25;
+	padding-bottom: 50px;
+	height: 100px;
+}
+
+#bottom {
+	margin-left: auto; margin-right: auto;
+	width: 100%;
+	min-width: 300px;
+	max-width: 700px;
+	text-align: center;
+	padding-top: 20px;
+}
