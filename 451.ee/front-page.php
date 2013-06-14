@@ -1,13 +1,12 @@
 <?php get_header(); ?>
 <div id="content" class="clearfix row-fluid">
-
 	<!-- Carousel -->
-	<div id="myCarousel" class="carousel slide"> 
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-			</ol>
-		<div class="carousel-inner">
+<div id="myCarousel" class="carousel slide"> 
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+	</ol>
+	<div class="carousel-inner">
 		<?php
 			global $post;
 			$tmp_post = $post;
@@ -25,14 +24,27 @@
 			<h2><?php the_title(); ?></h2>
 			<div class="feat_content">
 			<?php the_excerpt(); ?>
-			<a href="" class="btn btn-info">Loe lähemalt</a>
+			
+			<a href="" class="read_more"> <?php _e("Loe lähemalt", "theme"); ?> <i class="icon-chevron-right icon-large"></i></a>
 			</div>
 		</div>
-		<?php endforeach; ?>
-		<?php $post = $tmp_post; ?>
-	
+	<?php endforeach; ?>
+	<?php $post = $tmp_post; ?>
+
 		</div>
-	</div><!-- /.carousel -->
+</div><!-- /.carousel -->
+
+<div class="well">
+	<ul class="widgets">
+		<li><h3>2012 Raport</h3>
+<p><img src="http://451.ee/wp-content/uploads/icon-video.png" /> Videot<br />
+
+</p>
+		</li>
+		<li><h3 class="muted">2013 Raport</h3></li>
+		<li><h3 class="muted">2014 Raport</h3></li>
+	</ul>
+</div>
 
 				
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -46,10 +58,10 @@
 					
 					<article id="post-not-found">
 					    <header>
-					    	<h1><?php _e("Not Found", "bonestheme"); ?></h1>
+					    	<h1><?php _e("Not Found", "theme"); ?></h1>
 					    </header>
 					    <section class="post_content">
-					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "bonestheme"); ?></p>
+					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "theme"); ?></p>
 					    </section>
 					    <footer>
 					    </footer>
