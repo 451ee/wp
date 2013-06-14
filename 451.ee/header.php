@@ -48,13 +48,14 @@
 	<div class="container">
         <a href="https://github.com/451ee/wp"><img style="position: absolute; top: 28px; right: 0; border: 0; width: 120px; height: 120px;" src="<?php echo get_template_directory_uri(); ?>/img/forkMe.png" alt="Fork me on GitHub"></a>		
         <div id="header">
-		<a href="/"><img src="<? bloginfo('template_url');?>/img/logo.png" class="logo" /></a>
-	<form class="form-search">
-		<div class="input-append">
-			<input type="text" class="span2 search-query">
-			<button type="submit" class="btn"><i class="icon-search"></i></button>
-		</div>
-	</form>
+		<a href="<?php echo home_url( '/' ); ?>"><img src="<? bloginfo('template_url');?>/img/logo.png" class="logo" /></a>
+
+<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+  <div class="input-append">
+    <input type="text" class="span2" placeholder="Otsi lehelt" value="" name="s" id="s" />
+	 <button class="btn" onclick="submit();" type="button"><i class="icon-search"></i></button>
+  </div>
+</form>
 		</div>
 		<hr class="red">
 		<?php wp_nav_menu( array('menu' => 'Main Nav' )); ?>

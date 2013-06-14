@@ -63,34 +63,10 @@ function theme_js(){
 add_action('wp_enqueue_scripts', 'theme_js');
 
 function feat_init() {
-    $args = array( 'public' => true, 'label' => 'Featured',  'query_var' => true, 'capability_type' => 'post', 'supports' => array( 'title', 'editor', 'thumbnail' ) );
+    $args = array( 'public' => true, 'label' => 'Featured',  'query_var' => true, 'capability_type' => 'post', 'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ) );
     register_post_type( 'feat', $args );
 }
 
 add_action( 'init', 'feat_init' ); 
-
-add_action( 'add_meta_boxes', 'link_meta_box_add' );
-
-function link_meta_box_add()
-{
-	add_meta_box( 'my-meta-box-id', 'Link URL', 'link_meta_box_cb', 'feat', 'normal', 'high' );
-}
-
-function link_meta_box_cb()  
-{  
-
-$values = get_post_custom( $post->ID );  
-$text = isset( $values['feat_url'] ) ? esc_attr( $values['feat_url'][0] ) : ”;  
-$selected = isset( $values['my_meta_box_select'] ) ? esc_attr( $values['my_meta_box_select'][0] ) : ”;  
-$check = isset( $values['my_meta_box_check'] ) ? esc_attr( $values['my_meta_box_check'][0] ) : ”;  
-    ?>  
-<p>  
-    <label for="feat_url">Full url (http://...)</label>  
-    <input type="text" name="feat_url" id="feat_url" value="<?php echo $text; ?>" />  
-        </p>  
-    <?php 
-} 
-
-	add_action( 'save_post', 'link_meta_box_save' );
 
 ?>
