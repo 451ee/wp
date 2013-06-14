@@ -79,6 +79,8 @@ h4 {padding: 0; margin: 0 0 10px 0;}
 
 .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9 {border: 0px solid #000;}
 
+h1, h2, h3 {text-align: left;}
+
 /* Admin Top Navigation fixes */
 
 body.admin-bar .navbar-fixed-top{ 
