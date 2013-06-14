@@ -70,7 +70,6 @@ a:hover {color: #f15a24; text-decoration: underline;}
 	background: #999; /* Firefox */
 }
 
-
 strong {
 	font-family: BandaSemibold-SemiBold !important;
 }
@@ -260,7 +259,7 @@ li.widget_nav_menu ul li {display: block; float: none; width: 100%; padding: 0; 
 
 	}
 
-	article h1 {font-size: 30px; }
+	article h1 {font-size: 30px; text-align: left;}
 
 
 
