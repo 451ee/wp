@@ -50,7 +50,8 @@
 
 				
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<div class="text-center"><article <?php post_class('clearfix'); ?> role="article"><section class="post_content">
+				<div class="text-center">
+				<article <?php post_class('clearfix'); ?> role="article"><section class="post_content">
 						<?php the_content(); ?>
 					</section> 
 				</article>
