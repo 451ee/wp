@@ -99,5 +99,8 @@ $(document).ready(function() {
 	$('.alert-message').alert();
 	
 	$('.dropdown-toggle').dropdown();
- 
+
+	$( "#accordion" ).accordion(); // play me, like one of your french accordions
+    
+    
 }); /* end of as page load scripts */
