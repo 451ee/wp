@@ -46,7 +46,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 	<div class="container">
-        <a href="https://github.com/451ee/wp"><img style="position: absolute; top: 28px; right: 0; border: 0; " src="<?php echo get_template_directory_uri(); ?>/img/forkMe.png" alt="Fork me on GitHub"></a>		
+        <a href="https://github.com/451ee/wp"><img style="position: absolute; top: 28px; right: 0; border: 0; width: 120px; height: 120px;" src="<?php echo get_template_directory_uri(); ?>/img/forkMe.png" alt="Fork me on GitHub"></a>		
         <div id="header">
 		<a href="/"><img src="<? bloginfo('template_url');?>/img/logo.png" class="logo" /></a>
 	<form class="form-search">
