@@ -23,7 +23,7 @@ if($post->post_parent){
   $sidelinks = wp_list_pages("link_before=<i class='icon-li icon-angle-right icon-large'></i>&title_li=&echo=0&include=".$relations_string);
 }else{
   // display only main level and children
-  $sidelinks = wp_list_pages("title_li=&echo=0&depth=1&child_of=".$post->ID);
+  $sidelinks = wp_list_pages("link_before=<i class='icon-li icon-angle-right icon-large'></i>&title_li=&echo=0&depth=1&child_of=".$post->ID);
 }
 
 if ($sidelinks) { ?>

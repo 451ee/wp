@@ -110,7 +110,7 @@ padding: 10px 0 0;
 
 #header {margin: 10px 0 0 0;}
 
-#searchform {float: right; bottom: 5px; margin: 60px 0 0 0;}
+#searchform {}
 
 hr.red {
   -moz-border-bottom-colors: none;
@@ -142,7 +142,7 @@ ul#menu-header > li > a {
 	color: #999;
 }
 
-ul#menu-header li.current-menu-item > a, ul#menu-header li.current-page-ancestor > a {text-decoration: underline; color: #333333;}
+ul#menu-header li.current-menu-item > a, ul#menu-header li.current-page-ancestor > a, li.current_page_item a {text-decoration: underline; color: #333333;}
 
 .container-fluid {
 padding: 0 0 0 0;
@@ -214,6 +214,8 @@ article.post {text-align: justify;}
 
 ul.subpages {list-style: none outside; margin: 20px 0 0 12px; }
 ul.subpages li {}
+
+.children {list-style: none; position: relative; margin: 0 0 0 10px;}
 
 .icons-ul .icon-li {
   left: -1em;
