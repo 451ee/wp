@@ -79,7 +79,6 @@ h4 {padding: 0; margin: 0 0 10px 0;}
 
 .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9 {border: 0px solid #000;}
 
-h1, h2, h3 {text-align: left;}
 
 /* Admin Top Navigation fixes */
 
@@ -108,6 +107,8 @@ padding: 10px 0 0;
 }
 
 .post_content {margin: 0 0 10px 0; text-align: justify;}
+
+h1, h2, h3 {text-align: left;}
 
 #header {margin: 10px 0 0 0;}
 
