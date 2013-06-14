@@ -41,8 +41,8 @@
 			<p><img src="http://451.ee/wp-content/uploads/icon-post.png" /> 82172 videot</p>
 			<p><img src="http://451.ee/wp-content/uploads/icon-site.png" /> 314 mängu</p>
 		</li>
+		<li><h3 class="muted">2012 Raport</h3></li>
 		<li><h3 class="muted">2013 Raport</h3></li>
-		<li><h3 class="muted">2014 Raport</h3></li>
 	</ul>
 </div>
 
