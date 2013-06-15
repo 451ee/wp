@@ -38,15 +38,18 @@
 	</div>
 </div><!-- /.carousel -->
 <div class="well">
+
 	<ul class="widgets">
 		<li class="raport"><h3>2012 Eelraport</h3>
 			<p><i class="icon-youtube-play icon-3x"></i> <span>82172 videot</span></p>
 			<p><i class="icon-music icon-3x"></i> <span>22524 muusikapala</span></p>
 			<p><i class="icon-gamepad icon-3x"></i> <span>314 mängu</span></p>
+			<a href="http://451.ee/raportid/" class="read_more"><?php _e("Loe lähemalt", "theme"); ?> <i class="icon-chevron-right icon-2x"></i></a>
 		</li>
 		<li><h3 class="muted">2012 Raport</h3></li>
 		<li><h3 class="muted">2013 Raport</h3></li>
 	</ul>
+
 </div>
 
 
@@ -63,29 +66,33 @@
 			<?php endif; ?>
 <?php if ( is_user_logged_in() ) { ?>
 
-<div class="well">
-<?php insert_cform('1'); ?>
+<h2 class="ruupor"><?php _e("Anna meile teada sisu eemaldamisest!", "theme"); ?></h2>
+<div class="well" style="position: relative;">
+	<div class="row-fluid">
+		<div class="span7">
+		<?php insert_cform('1'); ?>
+		</div>
+
+		<div class="span5 well-large">
+		<p>	Projektil "451" eesmärk on koguda statsistikat ebaseadusliku sisu eemaldamise kohta internetist. Riik sellist statistikat veel ei kogu, seetõttu oleme väga tänulikud, kui annate meile informatsiooni suletud lehekülgede või kustutatud sisu kohta. Juriidilist nõu me ei anna, kuid seda, milliste seaduste alusel sisu eemaldamist nõuda võib, saab vaadata juriidilisest analüüsist.</p>
+		</div>
+	</div>
 </div>
 
 <?php } ?> 
 
 <div class="row-fluid">
 <h3><?php _e("Viimased postitused", "theme"); ?></h3>
-	<ul class="latest_posts">
-	<?php
 
-	global $post;
-
-	$args = array( 'posts_per_page' => 10, 'suppress_filters' => 0 );
-
-	$myposts = get_posts( $args );
-
-	foreach( $myposts as $post ) : setup_postdata($post); ?>
-		<li><i class="icon-chevron-right icon-large"></i> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-			</li>
-	<?php endforeach; ?>
-
-	</ul>
-</div>
+		<ul class="latest_posts">
+		<?php 
+		global $post;
+		$args = array( 'posts_per_page' => 10, 'suppress_filters' => 0 );
+		$myposts = get_posts( $args );	
+		foreach( $myposts as $post ) : setup_postdata($post); ?>
+			<li><i class="icon-chevron-right icon-large"></i> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				</li>
+		<?php endforeach; ?>  
+		</ul>
 </div>
 <?php get_footer(); ?>

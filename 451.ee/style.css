@@ -265,6 +265,8 @@ ul.latest_posts li > i {color: #f15a24;}
 
 ul.latest_posts li a {color: #333}
 
+.ruupor {background: url('img/ruupor.png') no-repeat top right; padding: 30px 0 30px 0;}
+
 .well {
   background-color: #F5F5F5;
   border: none;
@@ -308,33 +310,6 @@ ul.subpages a i {text-decoration: none;}
 li.widget_nav_menu ul li {display: block; float: none; width: 100%; padding: 0; border: none;}
 
 
-@media (min-width: 1200px) { 
-
-.container {max-width: 980px;}
-.logo {width: 100%;}
-#searchform, ul#language_list { margin: 70px 0 0 0;}
-
-}
-
-@media (min-width: 768px) and (max-width: 1200px) { 
-
-.logo {width: 100%;}
-#searchform, ul#language_list { margin: 70px 0 0 0;}
-
-}
-
-@media (max-width: 768px) { 
-.logo {width: 70%;}
-.feat_content h2 {font-size: 20px;}
-}
-
-@media (max-width: 480px) {
-ul#menu-header > li {
-    display: block;
-}
-
-ul#menu-header {height: auto;}
-}
 
 
 
@@ -370,4 +345,48 @@ a [class^="icon-"], a [class*=" icon-"] {
 
 h3 {
     line-height: 20px;
+}
+
+/* front-page form style override */
+
+.cform {width: 100%;}
+
+.cform input[type="text"], .cform textarea {width: 95%;}
+
+.cform textarea { height: 55px;}
+
+p.cf-sb {position: absolute; right: 15px; bottom: 5px; }
+
+p.cf-sb  input#sendbutton {padding: 10px; width: 200px; border-radius: 3px; border: none; background-color: #f15a24; color: #fff;}
+
+
+
+@media (min-width: 1200px) { 
+
+.container {max-width: 980px;}
+.logo {width: 100%;}
+#searchform, ul#language_list { margin: 70px 0 0 0;}
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) { 
+
+.logo {width: 100%;}
+#searchform, ul#language_list { margin: 70px 0 0 0;}
+
+}
+
+@media (max-width: 768px) { 
+.logo {width: 70%;}
+.feat_content h2 {font-size: 20px;}
+}
+
+@media (max-width: 480px) {
+ul#menu-header > li {
+    display: block;
+}
+
+ul#menu-header {height: auto;}
+
+p.cf-sb  {position: relative;}
 }
