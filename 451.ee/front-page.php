@@ -31,6 +31,9 @@
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
 		</ol>
 	</div>
 </div><!-- /.carousel -->
@@ -61,7 +64,7 @@
 <?php if ( is_user_logged_in() ) { ?>
 
 <div class="well">
-
+<?php insert_cform('1'); ?>
 </div>
 
 <?php } ?> 
