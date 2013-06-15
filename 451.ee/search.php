@@ -24,7 +24,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 					<section class="post_content clearfix">
-					<?php the_content( __("Read more &raquo;","theme") ); ?>
+					<?php the_excerpt( __("Read more &raquo;","theme") ); ?>
 					</section>
 			<?php endwhile; ?>
 

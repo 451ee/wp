@@ -37,29 +37,35 @@
 		</script>
 	</head>
 <body <?php body_class(); ?>>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=487525477986795";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-  <a href="https://github.com/451ee/wp"><img style="position: absolute; top: 28px; right: 0; border: 0; width: 120px; height: 120px;" src="<?php echo get_template_directory_uri(); ?>/img/forkMe.png" alt="Fork me on GitHub"></a>		
- <div class="container">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=487525477986795";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	  <a href="https://github.com/451ee/wp"><img style="position: absolute; right: 0; border: 0; width: 120px; height: 120px;" src="<?php echo get_template_directory_uri(); ?>/img/forkMe.png" alt="Fork me on GitHub"></a>
+<div class="container">
 	<div class="row-fluid">
-  
-		<a href="<?php echo home_url( '/' ); ?>"><img src="<? bloginfo('template_url');?>/img/logo.png" class="logo" /></a>
-
-		<?php languages_list(); ?>
-		
-		<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-		  <div class="input-append">
-			<input type="text" class="si" placeholder="Otsi lehelt" value="" name="s" id="s" />
-			 <button class="btn" onclick="submit();" type="button"><i class="icon-search icon-large"></i></button>
-		  </div>
-		</form>
-
+		<div class="span6">
+			<a href="<?php echo home_url( '/' ); ?>"><img src="<? bloginfo('template_url');?>/img/logo.png" class="logo" /></a>
+		</div>
+		<div class="span6">
+			<div class="row-fluid">
+				<div class="span6">
+				<?php languages_list(); ?>
+				</div>
+				<div class="span6">
+					<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+					  <div class="input-append">
+						<input type="text" class="si" placeholder="Otsi lehelt" value="" name="s" id="s" />
+						 <button class="btn" onclick="submit();" type="button"><i class="icon-search icon-large"></i></button>
+					  </div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 <hr class="red">
 	<?php wp_nav_menu( array('menu' => 'Main Nav' )); ?>

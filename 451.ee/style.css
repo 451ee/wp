@@ -99,7 +99,7 @@ input, textarea, select, .uneditable-input {
 
 img.alignnone {margin: 0 0 10px 0;}
 
-.logo {margin: 0 0 10px 0;}
+.logo {margin: 10px 0 10px 0;}
 
 #content{
 margin: 0px 0 15px 0;
@@ -117,11 +117,13 @@ ul#language_list{
   list-style: none;
   margin:0;
   padding:0;
-  float: right;
+  text-align: right;
+
 }
 
 ul#language_list li img{
   margin-right:5px;
+  display: inline;
 }
 
 ul#language_list li{
@@ -130,6 +132,7 @@ ul#language_list li{
   padding:0;
 }
 
+#searchform {padding: 5px; margin: 0px 0 0 0; text-align: right;}
 
 #searchform .btn {	
   background-color: #F5F5F5;
@@ -149,7 +152,7 @@ ul#language_list li{
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 }
 
-input.si { background-color: #F5F5F5; border: none; box-shadow: none;}
+input.si { background-color: #F5F5F5; border: none; box-shadow: none; width: 150px;}
 
 
 hr.red {
@@ -163,7 +166,7 @@ hr.red {
   border-style: solid none;
   border-radius: 3px;
   height: 5px;
-  margin: 5px 0;
+  margin: 0 0 5px 0;
 }	  
 
 
@@ -284,13 +287,23 @@ ul.subpages a i {text-decoration: none;}
 li.widget_nav_menu ul li {display: block; float: none; width: 100%; padding: 0; border: none;}
 
 
+@media (min-width: 1200px) { 
+
+.container {max-width: 980px}
+
+#searchform, ul#language_list { margin: 70px 0 0 0;}
+
+
+
+}
+
+
 
 @media only screen and (min-width: 320px) {
 	.carousel-caption p{
 		display: block;
 	}
 
-	#searchform {float: none; margin: 0;}
 }
 
 @media only screen and (min-width: 990px) {
@@ -306,7 +319,7 @@ li.widget_nav_menu ul li {display: block; float: none; width: 100%; padding: 0; 
 
 	article h1 {font-size: 30px; text-align: left;}
 
-	#searchform {float: right; margin: 60px 0 0 0;}
+
 
 
 
