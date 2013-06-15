@@ -36,10 +36,10 @@
 </div><!-- /.carousel -->
 <div class="well">
 	<ul class="widgets">
-		<li><h3>2012 Eelraport</h3>
-			<p><img src="http://451.ee/wp-content/uploads/icon-video.png" /> 22524 muusikapala</p>
-			<p><img src="http://451.ee/wp-content/uploads/icon-post.png" /> 82172 videot</p>
-			<p><img src="http://451.ee/wp-content/uploads/icon-site.png" /> 314 mängu</p>
+		<li class="raport"><h3>2012 Eelraport</h3>
+			<p><i class="icon-youtube-play icon-3x"></i> <span>82172 videot</span></p>
+			<p><i class="icon-music icon-3x"></i> <span>22524 muusikapala</span></p>
+			<p><i class="icon-gamepad icon-3x"></i> <span>314 mängu</span></p>
 		</li>
 		<li><h3 class="muted">2012 Raport</h3></li>
 		<li><h3 class="muted">2013 Raport</h3></li>
@@ -57,20 +57,32 @@
 				</article>
 				</div>
 			<?php endwhile; ?>	
-					
-					<?php else : ?>
-					
-					<article id="post-not-found">
-					    <header>
-					    	<h1><?php _e("Not Found", "theme"); ?></h1>
-					    </header>
-					    <section class="post_content">
-					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "theme"); ?></p>
-					    </section>
-					    <footer>
-					    </footer>
-					</article>
-					
-					<?php endif; ?>
+			<?php endif; ?>
+<?php if ( is_user_logged_in() ) { ?>
+
+<div class="well">
+
+</div>
+
+<?php } ?> 
+
+<div class="row-fluid">
+<h3><?php _e("Viimased postitused", "theme"); ?></h3>
+	<ul class="latest_posts">
+	<?php
+
+	global $post;
+
+	$args = array( 'posts_per_page' => 10, 'suppress_filters' => 0 );
+
+	$myposts = get_posts( $args );
+
+	foreach( $myposts as $post ) : setup_postdata($post); ?>
+		<li><i class="icon-chevron-right icon-large"></i> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			</li>
+	<?php endforeach; ?>
+
+	</ul>
+</div>
 </div>
 <?php get_footer(); ?>

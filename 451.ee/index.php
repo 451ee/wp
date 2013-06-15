@@ -15,7 +15,7 @@
 				<div class="span10">
 				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 					<section class="post_content clearfix">
-					<?php the_content( __("Read more &raquo;","theme") ); ?>
+					<?php if ( is_home() ) { the_excerpt(); } else { the_content( __("Read more &raquo;","theme") ); } ?>
 					</section>
 					 <?php if (is_single()) { ?>
 					 <div class="fb-like" data-href="<?php the_permalink() ?>" data-send="false" data-width="200" data-show-faces="false" data-font="arial"></div>
