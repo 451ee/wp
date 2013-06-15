@@ -326,6 +326,16 @@ li.widget_nav_menu ul li {display: block; float: none; width: 100%; padding: 0; 
 }
 
 
+    /* Table */
+
+table { width: 100%; max-width: 550px; }
+
+table>thead>tr>th { background: #f15a24; height: 55px; text-align: center; color: #fff; font-size: 13pt;}
+
+table>tbody>tr>td {background: #eee; border: 2px solid #fff; font-size: 9pt; padding: 5px;}
+
+table>tbody>tr>td.col1 {background: #ccc;}
+
 
 	/* fixes */
 

@@ -55,54 +55,5 @@ if ($sidelinks) { ?>
 	<div class="span3">
 	</div>
 </div>
-
-<table>
-  <thead>
-    <tr>
-        <th colspan="7">SISU EEMALDAMINE INTERNETIST
-        </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="col1">Ebaseadusliku sisu liik</td>
-      <td>Isikuandmete kaitsega vastuolus olev sisu</td>
-      <td>Tarbijakaitsega vastuolus olev sisus</td>
-      <td>Sisu, mis rikub kaughasartmängule kehtestatud nõudeid </td>
-      <td>Sisu, mida keelab karistusõigus (lasteporno, identiteedi vargus, jne)</td>
-      <td>Laimav ja halvustav sisu ning sisu, mis riivab isiku privaatsust ja isikuõigusi</td>
-      <td>Sisu, mis rikub intellektuaalse omandi õgusi</td>
-    </tr>
-    <tr>
-      <td class="col1">Vastutava isiku indentifitseerimine, kui ta ei ole teada</td>
-      <td>Taotlus ISP-le info saamiseks (väärteomenetlus)</td>
-      <td>Vastutav isik on reeglina teada</td>
-      <td> </td>
-      <td>Taotlus ISP-le info saamiseks (kriminaalmenetlus)</td>
-      <td>Eeltõenusmenetlus (tsiviilmenetlus).</td>
-      <td>1) Eeltõenusmenetlus (tsiviilmenetlus);<br />
-          2) Taotlus ISP-le info saamiseks (kriminaalmenetlus).</td>
-    </tr>
-    <tr>
-      <td class="col1">Vastutavate isikute ring</td>
-      <td>1) Õiguste rikkuja;<br />2) Kaasaitaja (teatud juhul ISP)</td>
-      <td>1) Õiguste rikkuja;<br />2) Kaasaitaja (teatud juhul ISP)</td>
-      <td> </td>
-      <td>1) Õiguste rikkuja; <br />2) Kaasaitaja (teatud juhul ISP)</td>
-      <td>1) Õiguste rikkuja; <br />2) Kaasaitaja (teatud juhul ISP)</td>
-      <td>1) Õiguste rikkuja; <br />2) Kaasaitaja (teatud juhul ISP)</td>
-    </tr>
-    <tr>
-      <td class="col1">Sisu eemaldamise meetodid</td>
-      <td>1) Taotlus;<br />2) Haldusmenetlus;<br />3) Väärteomenetlus</td>
-      <td>1) Taotlus;<br />2) Haldusmenetlus;<br />3) Väärteomenetlus</td>
-      <td>Juurdepääsu piiramine kaughasartmängu veebilehtedele</td>
-      <td>1) Taotlus;<br /></>2) Kriminaalmenetlus</td>
-      <td>1) Taotlus;<br />2) Tsiviilmenetlus</td>
-      <td>1) Taotlus;<br />2) Tsiviilmenetlus;<br />3) Kriminaalmenetlus</td>
-    </tr>
-  </tbody>
-</table>    
-    
         
 <?php get_footer(); ?>
