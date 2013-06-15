@@ -63,6 +63,26 @@ function feat_init() {
     register_post_type( 'feat', $args );
 }
 
-add_action( 'init', 'feat_init' ); 
+add_action( 'init', 'feat_init' );
+
+function languages_list(){
+    $languages = icl_get_languages('skip_missing=0&orderby=code');
+    if(!empty($languages)){
+        echo '<ul id="language_list">';
+        foreach($languages as $l){
+            echo '<li>';
+            if($l['country_flag_url']){
+                if(!$l['active']) echo '<a href="'.$l['url'].'">';
+                echo '<img src="'. get_template_directory_uri() .'/img/'.$l['language_code'].'.png"  alt="'.$l['language_code'].'"  />';
+                if(!$l['active']) echo '</a>';
+            }
+            if(!$l['active']) echo '<a href="'.$l['url'].'">';
+          #  echo icl_disp_language($l['native_name'], $l['translated_name']);
+            if(!$l['active']) echo '</a>';
+            echo '</li>';
+        }
+        echo '</ul>';
+    }
+}
 
 ?>

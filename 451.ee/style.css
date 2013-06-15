@@ -113,6 +113,23 @@ h2 {line-height: 1;}
 
 #header {margin: 10px 0 0 0;}
 
+ul#language_list{
+  list-style: none;
+  margin:0;
+  padding:0;
+  float: right;
+}
+
+ul#language_list li img{
+  margin-right:5px;
+}
+
+ul#language_list li{
+  display:inline;
+  margin:0 5px 0 5px;
+  padding:0;
+}
+
 
 #searchform .btn {	
   background-color: #F5F5F5;
