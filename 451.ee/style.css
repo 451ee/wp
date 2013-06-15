@@ -252,7 +252,18 @@ article.post {text-align: justify;}
 .author {color: #868686; font-weight: bold;}
 .widget {margin: 20px 0 0 15px;}
 .widget h3 {background-color: #DFDFDF; padding: 10px 10px; margin: 1px 0; font-size: 20px; font-weight: normal; color: #666; line-height: 1;}
+
+li.raport p {padding: 5px 0 5px 0;}
+li.raport span {margin: 0 0 0 40px;}
 .archives {background-color: #DFDFDF; padding: 15px; margin: 0px 0 0 0; list-style: none outside;}
+
+ul.latest_posts {list-style: none outside;}
+
+ul.latest_posts li {margin: 5px 0 0 0;}
+
+ul.latest_posts li > i {color: #f15a24;}
+
+ul.latest_posts li a {color: #333}
 
 .well {
   background-color: #F5F5F5;
