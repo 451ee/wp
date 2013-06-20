@@ -64,7 +64,7 @@
 				</div>
 			<?php endwhile; ?>	
 			<?php endif; ?>
-<?php if ( is_user_logged_in() ) { ?>
+<?php if ( is_user_logged_in() ) { ?><?php } ?> 
 
 <h2 class="ruupor"><?php _e("Anna meile teada sisu eemaldamisest!", "theme"); ?></h2>
 <div class="well" style="position: relative;">
@@ -79,7 +79,7 @@
 	</div>
 </div>
 
-<?php } ?> 
+
 
 <div class="row-fluid">
 <h3><?php _e("Viimased postitused", "theme"); ?></h3>
