@@ -8,17 +8,17 @@ INSTALLATION
 ------------
 
 Install as as Wordpress theme:
-1. Place the 451.ee folder into "themes" folder. 
-2. Activate the "451.ee" theme in /wp-admin/themes.php
++ Place the 451.ee folder into "themes" folder. 
++ Activate the "451.ee" theme in /wp-admin/themes.php
 
 ALERT - the site currently errors when WPML (explained next) is not installed.
 
 We also suggest you use the WPML multi-language plugin. 
 It's the solution we use for multi language sites and it's free for non-profits.
 
-1) Download WPML plugin - http://wpml.org/purchase/non-profits/
-2) Move the WPML plugin to /wp-conten/plugins
-3) Activate the WPML plugin at /wp-admin/plugins.php
++ Download WPML plugin - http://wpml.org/purchase/non-profits/
++ Move the WPML plugin to /wp-conten/plugins
++ Activate the WPML plugin at /wp-admin/plugins.php
 
 It worked this morning.
 
