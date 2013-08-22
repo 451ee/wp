@@ -6,7 +6,7 @@
 		<?php
 			global $post;
 			$tmp_post = $post;
-			$args = array( 'post_type' => 'feat', 'post_status' => 'publish', ); // set this to how many posts you want in the carousel
+			$args = array( 'post_type' => 'feat', 'post_status' => 'publish', 'suppress_filters' => 0 ); // set this to how many posts you want in the carousel
 			$myposts = get_posts( $args );
 			$post_num = 0;
 			foreach( $myposts as $post ) :	setup_postdata($post);
