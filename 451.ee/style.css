@@ -362,7 +362,6 @@ p.cf-sb {position: absolute; right: 15px; bottom: 5px; }
 p.cf-sb  input#sendbutton {padding: 10px; width: 200px; border-radius: 3px; border: none; background-color: #f15a24; color: #fff;}
 
 
-
 @media (min-width: 1200px) { 
 
 .container {max-width: 980px;}
@@ -381,8 +380,8 @@ p.cf-sb  input#sendbutton {padding: 10px; width: 200px; border-radius: 3px; bord
 @media (max-width: 768px) { 
 	.logo {width: 70%;}
 	.feat_content h2 {font-size: 20px;}
-	#github {display: none;}
 }
+
 
 @media (max-width: 480px) {
 ul#menu-header > li {

@@ -37,7 +37,21 @@
 		</ol>
 	</div>
 </div><!-- /.carousel -->
-<div class="well">
+<div class="row-fluid">
+<h3><?php _e("Viimased postitused", "theme"); ?></h3>
+
+		<ul class="latest_posts">
+		<?php 
+		global $post;
+		$args = array( 'posts_per_page' => 10, 'suppress_filters' => 0 );
+		$myposts = get_posts( $args );	
+		foreach( $myposts as $post ) : setup_postdata($post); ?>
+			<li><i class="icon-chevron-right icon-large"></i> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				</li>
+		<?php endforeach; ?>  
+		</ul>
+</div>
+<div class="well" style="display: none;">
 
 	<ul class="widgets">
 		<li class="raport"><h3>2012 Eelraport</h3>
@@ -77,22 +91,5 @@
 		<p>	Projektil "451" eesmärk on koguda statsistikat ebaseadusliku sisu eemaldamise kohta internetist. Riik sellist statistikat veel ei kogu, seetõttu oleme väga tänulikud, kui annate meile informatsiooni suletud lehekülgede või kustutatud sisu kohta. Juriidilist nõu me ei anna, kuid seda, milliste seaduste alusel sisu eemaldamist nõuda võib, saab vaadata juriidilisest analüüsist.</p>
 		</div>
 	</div>
-</div>
-
-
-
-<div class="row-fluid">
-<h3><?php _e("Viimased postitused", "theme"); ?></h3>
-
-		<ul class="latest_posts">
-		<?php 
-		global $post;
-		$args = array( 'posts_per_page' => 10, 'suppress_filters' => 0 );
-		$myposts = get_posts( $args );	
-		foreach( $myposts as $post ) : setup_postdata($post); ?>
-			<li><i class="icon-chevron-right icon-large"></i> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				</li>
-		<?php endforeach; ?>  
-		</ul>
 </div>
 <?php get_footer(); ?>
